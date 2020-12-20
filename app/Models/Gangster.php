@@ -41,4 +41,10 @@ class Gangster extends Model
     {
         return $this->hasMany('App\Models\Passenger','gangster');
     }	
+
+	//godfathers
+	public function godfathers()
+    {
+        return $this->hasMany('App\Models\Godfather','gangster');
+    }
 }

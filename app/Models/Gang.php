@@ -35,4 +35,16 @@ class Gang extends Model
     {
         return $this->hasMany('App\Models\Car','owner');
     }
+
+	//newspapers
+	public function newspapers()
+    {
+        return $this->hasMany('App\Models\Newspaper','gang');
+    }
+
+	//godfathers
+	public function godfathers()
+    {
+        return $this->hasMany('App\Models\Godfather','gang');
+    }
 }

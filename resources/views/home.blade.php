@@ -16,6 +16,17 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+
+                <div class="links">
+						<a href="/forum">Forum</a>
+						<a href="/manual">Manual</a>
+						<a href="/gangs">Gang</a>
+						<a href="/games">City</a>
+						<a href="/newspaper">Newspaper</a>
+						<a href="/users/{{ Auth::user()->id }}">Account</a>
+				</div>
+
+
             </div>
         </div>
     </div>

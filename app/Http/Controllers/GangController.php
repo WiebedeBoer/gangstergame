@@ -18,7 +18,7 @@ class GangController extends Controller
     {            	
 		$gangs =  Gang::with('games','users','buildings','cars')->orderBy('gang_name','ASC')->paginate(50);
         $user = auth()->user();
-		return view('gangs.index', compact('games','user'));        
+		return view('gangs.index', compact('gangs','user'));        
     }
 	
 	//show form

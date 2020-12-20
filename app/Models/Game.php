@@ -36,4 +36,16 @@ class Game extends Model
     {
         return $this->hasMany('App\Models\Car','game');
     }	
+
+	//newspapers
+	public function newspapers()
+    {
+        return $this->hasMany('App\Models\Newspaper','game');
+    }
+
+	//godfathers
+	public function godfathers()
+    {
+        return $this->hasMany('App\Models\Godfather','game');
+    }
 }

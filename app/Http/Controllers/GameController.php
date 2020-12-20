@@ -16,7 +16,7 @@ class GameController extends Controller
 	//main 
     public function index()
     {            	
-		$games = Game::with('gangs','buildings','hoods','cars')->orderBy('building_name','ASC')->paginate(50);
+		$games = Game::with('gangs','buildings','hoods','cars')->orderBy('game_name','ASC')->paginate(50);
         $user = auth()->user();
 		return view('games.index', compact('games','user'));        
     }
