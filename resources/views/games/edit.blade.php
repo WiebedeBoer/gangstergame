@@ -1,4 +1,4 @@
-@extends('layouts.game')
+@extends('layouts.city')
 @section('title')
 Game
 @endsection

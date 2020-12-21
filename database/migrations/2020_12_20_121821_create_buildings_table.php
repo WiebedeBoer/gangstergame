@@ -19,10 +19,13 @@ class CreateBuildingsTable extends Migration
             //data
             $table->string('building_name')->nullable();
             //purposes
-            $table->string('front')->nullable(); //numbers racket, casino, moonshine still, speakeasy, brothel, counterfeit press, loanshark, teamsters
-            $table->string('equipment')->nullable(); //gun, car
-            $table->string('labour')->nullable(); //gangsters, accountants, lawyers
+            $table->string('front')->default('none'); //numbers racket, casino, moonshine still, speakeasy, brothel, counterfeit press, loanshark, teamsters
+            $table->string('equipment')->default('none'); //gun, car
+            $table->string('labour')->default('none'); //gangsters, accountants, lawyers
             $table->integer('state')->default(100);
+            //location
+            $table->integer('x');
+            $table->integer('y');
             //economy
             $table->string('economy')->default('normalcy');
             $table->integer('income')->default(250);

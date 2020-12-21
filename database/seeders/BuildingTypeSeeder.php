@@ -855,17 +855,6 @@ class BuildingTypeSeeder extends Seeder
             'building_size' => '2x2'
         ]);	
 		DB::table('building_types')->insert([
-			'building_name' => 'court',
-            'category' => 'municipal',
-            'building_size' => '2x2',
-            'labour' => 'lawyers'
-        ]);	
-		DB::table('building_types')->insert([
-			'building_name' => 'FBI',
-            'category' => 'municipal',
-            'building_size' => '2x2'
-        ]);	
-		DB::table('building_types')->insert([
 			'building_name' => 'post office',
             'category' => 'municipal',
             'building_size' => '2x2'
@@ -922,16 +911,30 @@ class BuildingTypeSeeder extends Seeder
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //municipal large
+        //university
 		DB::table('building_types')->insert([
 			'building_name' => 'university',
-            'category' => 'municipal',
+            'category' => 'unversity',
             'building_size' => '5x5'
-        ]);	
+        ]);
+        //army	
 		DB::table('building_types')->insert([
 			'building_name' => 'army barracks',
-            'category' => 'municipal',
+            'category' => 'army',
             'building_size' => '5x5'
+        ]);	
+        //court
+		DB::table('building_types')->insert([
+			'building_name' => 'court',
+            'category' => 'court',
+            'building_size' => '2x2',
+            'labour' => 'lawyers'
+        ]);	
+        //FBI
+		DB::table('building_types')->insert([
+			'building_name' => 'FBI',
+            'category' => 'FBI',
+            'building_size' => '2x2'
         ]);	
         //prison
 		DB::table('building_types')->insert([
