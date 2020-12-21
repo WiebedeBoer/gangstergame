@@ -1,41 +1,42 @@
 function BuildingGenerator(name,front,equipment,labour,state,xloc,yloc,economy,income,building_size,neighbourhood,building_type,building_category,owner) {
 
+    var grid_size = 150;
     //location size
     if(building_size =="1x1"){
-        var generatedbuilding_x = 150 * (xloc - 20);
-        var generatedbuilding_y = 150 * (yloc - 20); 
-        var x_size = 150;
-        var y_size = 150;
+        var generatedbuilding_x = grid_size * (xloc - 61);
+        var generatedbuilding_y = grid_size * (yloc - 61); 
+        var x_size = grid_size;
+        var y_size = grid_size;
     }
     else if(building_size =="1x2"){
-        var generatedbuilding_x = 150 * (xloc - 20);
-        var generatedbuilding_y = 150 * (yloc - 20) + 150; 
-        var x_size = 150;
-        var y_size = 300;
+        var generatedbuilding_x = grid_size * (xloc - 61);
+        var generatedbuilding_y = grid_size * (yloc - 61) + grid_size; 
+        var x_size = grid_size;
+        var y_size = grid_size * 2;
     }
     else if(building_size =="2x2"){
-        var generatedbuilding_x = 150 * (xloc - 20) + 150;
-        var generatedbuilding_y = 150 * (yloc - 20) + 150; 
-        var x_size = 300;
-        var y_size = 300;
+        var generatedbuilding_x = grid_size * (xloc - 61) + grid_size;
+        var generatedbuilding_y = grid_size * (yloc - 61) + grid_size; 
+        var x_size = grid_size * 2;
+        var y_size = grid_size * 2;
     }
     else if(building_size =="2x5"){
-        var generatedbuilding_x = 150 * (xloc - 20) + 150;
-        var generatedbuilding_y = 150 * (yloc - 20) + 375; 
-        var x_size = 300;
-        var y_size = 750;
+        var generatedbuilding_x = grid_size * (xloc - 61) + grid_size;
+        var generatedbuilding_y = grid_size * (yloc - 61) + (grid_size * 2.5); 
+        var x_size = grid_size * 2;
+        var y_size = grid_size * 5;
     }
     else if(building_size =="5x5"){
-        var generatedbuilding_x = 150 * (xloc - 20) + 375;
-        var generatedbuilding_y = 150 * (yloc - 20) + 375; 
-        var x_size = 750;
-        var y_size = 750;
+        var generatedbuilding_x = grid_size * (xloc - 61) + (grid_size * 2.5);
+        var generatedbuilding_y = grid_size * (yloc - 61) + (grid_size * 2.5); 
+        var x_size = grid_size * 5;
+        var y_size = grid_size * 5;
     }
     else {
-        var generatedbuilding_x = 150 * (xloc - 20);
-        var generatedbuilding_y = 150 * (yloc - 20); 
-        var x_size = 750;
-        var y_size = 750;
+        var generatedbuilding_x = grid_size * (xloc - 61);
+        var generatedbuilding_y = grid_size * (yloc - 61); 
+        var x_size = grid_size;
+        var y_size = grid_size;
     }
 
     //equipment
@@ -259,65 +260,69 @@ function BuildingGenerator(name,front,equipment,labour,state,xloc,yloc,economy,i
             var autodealer29 = new AutoDealer(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
             scene.add( autodealer29 ); 
         }
-        else if(building_type =="department store"){
-            var departmentstore30 = new DepartmentStore(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( departmentstore30 ); 
-        }
         else if(building_type =="movie theatre"){
-            var movietheatre31 = new MovieTheatre(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( movietheatre31 ); 
+            var movietheatre30 = new MovieTheatre(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( movietheatre30 ); 
         }
         else if(building_type =="cab company"){
-            var cabcompany32 = new CabCompany(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( cabcompany32 ); 
+            var cabcompany31 = new CabCompany(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( cabcompany31 ); 
         }
         else if(building_type =="removal company"){
-            var removalcompany33 = new RemovalCompany(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( removalcompany33 ); 
+            var removalcompany32 = new RemovalCompany(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( removalcompany32 ); 
         }
         else if(building_type =="bank" && building_size =="2x2"){
-            var bank34 = new Bank(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( bank34 ); 
+            var bank33 = new Bank(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( bank33 ); 
         }
         else if(building_type =="bank" && building_size =="1x2"){
-            var bank35 = new SmallBank(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( bank35 ); 
+            var bank34 = new SmallBank(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( bank34 ); 
         }
         else if(building_type =="hotel" && building_size =="2x2"){
-            var hotel36 = new Hotel(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( hotel36 ); 
+            var hotel35 = new Hotel(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( hotel35 ); 
         }
         else if(building_type =="hotel" && building_size =="1x2"){
-            var hotel37 = new SmallHotel(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( hotel37 ); 
+            var hotel36 = new SmallHotel(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( hotel36 ); 
+        }
+        else if(building_type =="department store" && building_size =="2x2"){
+            var departmentstore37 = new DepartmentStore(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( departmentstore37 ); 
+        }
+        else if(building_type =="department store" && building_size =="1x2"){
+            var departmentstore38 = new SmallDepartmentStore(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( departmentstore38 ); 
         }
         else if(building_type =="local store"){
-            var store38a = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( store38a ); 
+            var store39a = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( store39a ); 
         }
         else if(building_type =="convenience store"){
-            var store38b = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( store38b ); 
+            var store39b = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( store39b ); 
         }
         else if(building_type =="auction room"){
-            var store38c = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( store38c ); 
+            var store39c = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( store39c ); 
         }
         else if(building_type =="restaurant"){
-            var store38d = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( store38d ); 
+            var store39d = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( store39d ); 
         }
         else if(building_type =="carpet store"){
-            var store38e = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( store38e ); 
+            var store39e = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( store39e ); 
         }
         else if(building_type =="furniture store"){
-            var store8f = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( store38f ); 
+            var store39f = new MediumCommercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( store39f ); 
         }
         else {
-            var commercial39 = new Commercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
-            scene.add( commercial39 );
+            var commercial40 = new Commercial(generatedbuilding_x,generatedbuilding_y,x_size,y_size,culture_name,state,economy,building_type);
+            scene.add( commercial40 );
         }
 
     }

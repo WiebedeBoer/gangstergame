@@ -18,11 +18,9 @@ class CreateBuildingsTable extends Migration
             $table->bigIncrements('building_id');
             //data
             $table->string('building_name')->nullable();
-            //purposes
-            $table->string('front')->default('none'); //numbers racket, casino, moonshine still, speakeasy, brothel, counterfeit press, loanshark, teamsters
-            $table->string('equipment')->default('none'); //gun, car
-            $table->string('labour')->default('none'); //gangsters, accountants, lawyers
             $table->integer('state')->default(100);
+            //illicit purposes
+            $table->string('front')->default('none'); //numbers racket, casino, moonshine still, speakeasy, brothel, counterfeit press, loanshark, teamsters
             //location
             $table->integer('x');
             $table->integer('y');

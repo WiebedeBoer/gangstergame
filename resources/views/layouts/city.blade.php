@@ -54,7 +54,6 @@
     <!--commercial buildings-->
     <script type="text/javascript" src="{{ asset ('building/gunsmith.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/autodealer.js') }}"></script>
-    <script type="text/javascript" src="{{ asset ('building/departmentstore.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/movietheatre.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/cabcompany.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/removalcompany.js') }}"></script>
@@ -62,6 +61,8 @@
     <script type="text/javascript" src="{{ asset ('building/smallbank.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/hotel.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/smallhotel.js') }}"></script>
+    <script type="text/javascript" src="{{ asset ('building/departmentstore.js') }}"></script>
+    <script type="text/javascript" src="{{ asset ('building/smalldepartmentstore.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/mediumcommercial.js') }}"></script>
     <script type="text/javascript" src="{{ asset ('building/commercial.js') }}"></script>
     <!--industrial buildings-->

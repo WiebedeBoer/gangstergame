@@ -40,12 +40,12 @@ var gangs ="{{$gangs}}";
 var city_buildings =[];
 @foreach($buildings as $building)
         city_buildings.push("{{$building->building_name}}"); //building name
-        city_buildings.push("{{$building->front}}"); //front
-        city_buildings.push("{{$building->equipment}}"); //gun, car
-        city_buildings.push("{{$building->labour}}"); //gangster
+        city_buildings.push("{{$building->front}}"); //front: numbers racket, casino, moonshine still, speakeasy, brothel, counterfeit press, loanshark, teamsters
+        city_buildings.push("{{$building->types->equipment}}"); //equipment: gun, car
+        city_buildings.push("{{$building->types->labour}}"); //labour: gangsters, accountants, lawyers
         city_buildings.push("{{$building->state}}"); //building state
-        city_buildings.push("{{$building->x}}"); 
-        city_buildings.push("{{$building->y}}"); 
+        city_buildings.push("{{$building->x}}"); //x coordinate
+        city_buildings.push("{{$building->y}}"); //y coordinate
         city_buildings.push("{{$building->economy}}"); //economic state
         city_buildings.push("{{$building->income}}"); //income
         city_buildings.push("{{$building->building_size}}"); //building size
@@ -59,7 +59,7 @@ var city_buildings =[];
         @endif
 @endforeach
 //environment
-var environmentsize = 5100;
+var environmentsize = 9225 * 2;
 //plane
 var impluve =new PartPlane(environmentsize,environmentsize,city_type,0,0,0);
 scene.add( impluve );
