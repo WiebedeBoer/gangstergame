@@ -543,6 +543,325 @@ class BuildingSeeder extends Seeder
             'hood' => '16',
             'type' => '158',
         ]);
+        //school ()
+		DB::table('buildings')->insert([
+			'building_name' => 'School',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '159',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'School',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '159',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'School',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '159',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'School',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '159',
+        ]);
+        //highschool ()
+		DB::table('buildings')->insert([
+			'building_name' => 'Highschool',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '160',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Highschool',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '160',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Highschool',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '160',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Highschool',
+            'x' => '',
+            'y' => '',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '',
+            'type' => '160',
+        ]);
+        //post office (47,83,152)
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '98',
+            'y' => '83',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '6',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '113',
+            'y' => '47',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '1',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '80',
+            'y' => '59',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '9',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '77',
+            'y' => '29',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '7',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '80',
+            'y' => '83',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '2',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '74',
+            'y' => '98',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '14',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '20',
+            'y' => '53',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '15',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '74',
+            'y' => '5',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '23',
+            'type' => '161',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Post Office',
+            'x' => '110',
+            'y' => '11',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '19',
+            'type' => '161',
+        ]);
+        //telegraph office (47,83,152)
+		DB::table('buildings')->insert([
+			'building_name' => 'Telegraph Office',
+            'x' => '98',
+            'y' => '77',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '162',
+        ]);
+        //stock exchange (194,182,130)
+		DB::table('buildings')->insert([
+			'building_name' => 'Stock Exchange',
+            'x' => '101',
+            'y' => '77',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '163',
+        ]);
+        //labor exchange (194,182,130)
+		DB::table('buildings')->insert([
+			'building_name' => 'Labor Exchange',
+            'x' => '101',
+            'y' => '80',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '164',
+        ]);
+        //museum (103,91,119)
+		DB::table('buildings')->insert([
+			'building_name' => 'Museum of Contemporary Art',
+            'x' => '113',
+            'y' => '38',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '8',
+            'type' => '165',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Field Museum',
+            'x' => '119',
+            'y' => '86',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '165',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'History Museum',
+            'x' => '119',
+            'y' => '26',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '8',
+            'type' => '165',
+        ]);
+        //baths (103,91,119)
+		DB::table('buildings')->insert([
+			'building_name' => 'Baths',
+            'x' => '104',
+            'y' => '59',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '1',
+            'type' => '166',
+        ]);
+        //opera (103,91,119)
+		DB::table('buildings')->insert([
+			'building_name' => 'Opera',
+            'x' => '92',
+            'y' => '65',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '167',
+        ]);
+        //orchestra (103,91,119)
+		DB::table('buildings')->insert([
+			'building_name' => 'Orchestra Hall',
+            'x' => '107',
+            'y' => '68',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '168',
+        ]);
+        //theatre (103,91,119)
+		DB::table('buildings')->insert([
+			'building_name' => 'City Theatre',
+            'x' => '104',
+            'y' => '65',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '5',
+            'type' => '169',
+        ]);
+		DB::table('buildings')->insert([
+			'building_name' => 'Den Theatre',
+            'x' => '83',
+            'y' => '38',
+            'economy' => 'municipal',
+            'income' => '0',
+            'building_size' => '2x2',
+            'game' => '1',
+            'hood' => '7',
+            'type' => '169',
+        ]);
         //church (103,91,119)
 		DB::table('buildings')->insert([
 			'building_name' => 'Presbyterian Church',

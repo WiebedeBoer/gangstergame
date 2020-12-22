@@ -1068,57 +1068,57 @@ class BuildingTypeSeeder extends Seeder
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //161
+        //161 .9
 		DB::table('building_types')->insert([
 			'building_name' => 'post office',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //162
+        //162 .1
 		DB::table('building_types')->insert([
 			'building_name' => 'telegraph office',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //163
+        //163 .1
 		DB::table('building_types')->insert([
 			'building_name' => 'stock exchange',
             'category' => 'municipal',
             'building_size' => '2x2',
             'labour' => 'accountants'
         ]);	
-        //164
+        //164 .1
 		DB::table('building_types')->insert([
 			'building_name' => 'labor exchange',
             'category' => 'municipal',
             'building_size' => '2x2',
             'labour' => 'gangsters'
         ]);	
-        //165
+        //165 .3
 		DB::table('building_types')->insert([
 			'building_name' => 'museum',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //166
+        //166 .1
 		DB::table('building_types')->insert([
 			'building_name' => 'public baths',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //167
+        //167 .1
 		DB::table('building_types')->insert([
 			'building_name' => 'opera hall',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //168
+        //168 .1
 		DB::table('building_types')->insert([
 			'building_name' => 'orchestra hall',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //169
+        //169 .2
 		DB::table('building_types')->insert([
 			'building_name' => 'theatre',
             'category' => 'municipal',
