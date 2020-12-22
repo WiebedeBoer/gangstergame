@@ -26,6 +26,12 @@ function BuildingGenerator(name,front,equipment,labour,state,xloc,yloc,economy,i
         var x_size = grid_size * 2;
         var y_size = grid_size * 5;
     }
+    else if(building_size =="5x2"){
+        var generatedbuilding_x = grid_size * (xloc - 61) + (grid_size * 2.5);
+        var generatedbuilding_y = grid_size * (yloc - 61) + grid_size; 
+        var x_size = grid_size * 5;
+        var y_size = grid_size * 2;
+    }
     else if(building_size =="5x5"){
         var generatedbuilding_x = grid_size * (xloc - 61) + (grid_size * 2.5);
         var generatedbuilding_y = grid_size * (yloc - 61) + (grid_size * 2.5); 

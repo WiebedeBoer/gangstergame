@@ -267,7 +267,7 @@ class BuildingTypeSeeder extends Seeder
             'building_size' => '2x2'
         ]);
         //industrial (freight)
-        //39
+        //39 .7
 		DB::table('building_types')->insert([
 			'building_name' => 'freight forwarding',
             'category' => 'industrial',
@@ -294,7 +294,7 @@ class BuildingTypeSeeder extends Seeder
 		DB::table('building_types')->insert([
 			'building_name' => 'railroad station',
             'category' => 'municipal',
-            'building_size' => '2x5'
+            'building_size' => '5x2'
         ]);
         //commercial (food)
         //43
