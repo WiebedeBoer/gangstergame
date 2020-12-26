@@ -931,7 +931,7 @@ class BuildingTypeSeeder extends Seeder
             'building_size' => '1x2',
             'front' => 'numbers racket'
         ]);	
-        //141
+        //141 .10
 		DB::table('building_types')->insert([
 			'building_name' => 'hotel (small)',
             'category' => 'commercial',
@@ -1017,7 +1017,7 @@ class BuildingTypeSeeder extends Seeder
             'building_size' => '2x2',
             'front' => 'numbers racket'
         ]);	
-        //153
+        //153 .10
 		DB::table('building_types')->insert([
 			'building_name' => 'hotel',
             'category' => 'commercial',
@@ -1056,13 +1056,13 @@ class BuildingTypeSeeder extends Seeder
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //159
+        //159 .7
 		DB::table('building_types')->insert([
 			'building_name' => 'school',
             'category' => 'municipal',
             'building_size' => '2x2'
         ]);	
-        //160
+        //160 .6
 		DB::table('building_types')->insert([
 			'building_name' => 'highschool',
             'category' => 'municipal',
@@ -1211,6 +1211,13 @@ class BuildingTypeSeeder extends Seeder
 			'building_name' => 'park',
             'category' => 'park',
             'building_size' => '5x5'
+        ]);	
+        //library
+        //183 .5	
+		DB::table('building_types')->insert([
+			'building_name' => 'library',
+            'category' => 'municipal',
+            'building_size' => '2x2'
         ]);	
     }
 }

@@ -28,7 +28,7 @@ class CreateBuildingsTable extends Migration
             $table->string('economy')->default('normalcy');
             $table->integer('income')->default(250);
             //size
-            $table->string('building_size')->default('1x1'); //1x1, 2x2, 1x2, 2x5, 5x5
+            $table->string('building_size')->default('1x1'); //1x1, 2x2, 1x2, 2x5, 5x2, 5x5
             //fk
             $table->unsignedBigInteger('game')->default(1);	
             $table->unsignedBigInteger('hood')->default(1);	
