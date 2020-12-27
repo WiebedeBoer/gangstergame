@@ -945,7 +945,7 @@ class BuildingTypeSeeder extends Seeder
             'building_size' => '1x2',
             'front' => 'speakeasy'
         ]);	
-        //143
+        //143 .8
 		DB::table('building_types')->insert([
 			'building_name' => 'bank (small)',
             'category' => 'commercial',
@@ -985,7 +985,7 @@ class BuildingTypeSeeder extends Seeder
             'category' => 'commercial',
             'building_size' => '1x2'
         ]);	
-        //149
+        //149 .8
 		DB::table('building_types')->insert([
 			'building_name' => 'department store (junior)',
             'category' => 'commercial',
@@ -1002,7 +1002,7 @@ class BuildingTypeSeeder extends Seeder
             'equipment' => 'car',
         ]);	
         //commercial (large)
-        //151
+        //151 .2
 		DB::table('building_types')->insert([
 			'building_name' => 'bank',
             'category' => 'commercial',
@@ -1010,7 +1010,7 @@ class BuildingTypeSeeder extends Seeder
             'front' => 'casino',
             'labour' => 'accountants'
         ]);	
-        //152
+        //152 .6
 		DB::table('building_types')->insert([
 			'building_name' => 'department store (mainline)',
             'category' => 'commercial',
